@@ -201,7 +201,7 @@
     transform: rotateY(360deg);
 }
 
-input[disabled]:checked+.backfaces {
+input.drop:checked+.backfaces {
     transform: scale(0);
 }
 
