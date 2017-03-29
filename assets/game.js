@@ -25,15 +25,16 @@ var inpt = document.querySelectorAll("input.checkbox");
 
 function Flip(val) {
     if (mem.length < 2) {
-        inpt[val].disabled = true;
+        
         mem.push(val);
         console.log(cells[val].src);
     }
     if (mem.length == 2) {
         if (cells[mem[0]].src == cells[mem[1]].src) {
+            
+                inpt[mem[0]].disabled = true;
+                inpt[mem[1]].disabled = true;
 
-            inpt[mem[0]].classList.add("drop");
-            inpt[mem[1]].classList.add("drop");
             mem = [];
             all += 2;
 

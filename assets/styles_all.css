@@ -1,3 +1,4 @@
+
 input.pages[type=radio]:checked+div.content {
                 top:0;
                 left:0;
@@ -15,4 +16,20 @@ input.pages[type=radio]:checked+div.content {
             }
             input {
                 display:none;
+            }
+            
+            input.pages[type=radio]:checked+div.gm {
+                opacity:1;
+            }
+            
+            .gm {
+                width: 100%;
+                height: 100%;
+                background: url(main_bg.png) ;
+                background-size: cover;
+                margin: 0;
+                background-attachment:fixed;
+                background-repeat: no-repeat;
+                opacity:0;
+                transition: 1s;
             }
